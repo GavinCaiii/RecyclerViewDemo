@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edit_data_etv"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/add_item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加数据"/>
+
+        <Button
+            android:id="@+id/remove_item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除数据"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/change_listView_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="切换ListView"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/change_gridView_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="切换GridView"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/change_waterfall_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="切换瀑布流"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ly_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
